@@ -1,0 +1,17 @@
+{
+  "name": "eslint-check-staged",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "bin": {
+    "eslintCheckStages": "./index.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "execa": "^6.1.0"
+  }
+}
