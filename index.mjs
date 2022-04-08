@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import path from 'path'
+import chalk from 'chalk'
 import { getStagedFiles } from './getStagedFiles.mjs'
 
 
@@ -23,5 +24,6 @@ config?.default?.overrides?.forEach((override) => {
 
 
 if(targetFiles.length) {
+  console.log(chalk.red(`======================\nYou must to remove from .eslintrc.js files:\n${targetFiles.join('\n')}\n======================`))
   process.exit(1);
 }
